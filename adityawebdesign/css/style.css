@@ -1,0 +1,221 @@
+/*In css we can select using either id or class or the tag name and 
+even after using id we can configure each tag seperately*/
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /*font:15px/1.5 , Helvetica, sans-serif; ->Shortcut for above three steps*/
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/*GLOBAL*/
+.container{
+    width: 80%;/*percentage is used because we want responsive*/
+    margin: auto;/*moves it to middle*/
+    overflow: hidden; /*if content goes outside we dont want scroll*/
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+.button-1{
+    height: 38px;
+    background: #e8491d;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-weight: solid;
+    border-radius: 50%; /*Used to make a rounded button*/
+}
+
+/* HEADER */
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a/*used to select links from header*/{
+    color: #ffffff;
+    text-decoration: none; /*To remove underline of link which comes by default*/
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight , header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* SHOWCASE */
+#showcase{
+    min-height: 400px;
+    background:url(../img/showcase.jpg) no-repeat 0 -400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 22px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* BOXES */
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Main col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+
+/* SERVICES */
+ul#services li{
+    list-style: none;
+    padding: 50px;
+    border: #cccccc solid 1px;
+    margin: 20px;
+    background: #e6e6e6;
+}
+
+/* FOOTER */
+
+footer{
+    background: #e8491d;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* For website to be fully responsive we use media queries*/
+/* MEDIA QUERIES */
+@media(max-width: 768px){
+    header #branding ,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+
+
+}
