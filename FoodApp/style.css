@@ -137,7 +137,6 @@ header{
     height: 16rem;
     display: block;
     margin: auto;
-    padding: 1rem;
 }
 
 .card h3{
@@ -314,6 +313,11 @@ footer{
     #home p{
         font-size: 2rem;
     }
+
+    .card img{
+        height: 12rem;
+        text-align: center;
+    }
 }
 
 @media(max-width:400px){
@@ -330,6 +334,11 @@ footer{
     .navbar-items{
         display: flex;
         flex-direction: column;
+    }
+
+    .card img{
+        height: 12rem;
+        text-align: center;
     }
 }
 /* END OF Media Queries */
