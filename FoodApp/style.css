@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* END OF Basic reset */
+
+/* Global Styles */
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Aclonica','sans-serif' , cursive;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    /* color: #ccc; */
+}
+/* END OF Global Styles */
+
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+}
+/* END OF HEADER */
+
+
+/* Logo */
+.logo{
+    padding: 0 5rem;
+}
+/* END OF Logo */
+
+/* Logo image */
+.logo img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+/* END OF Logo image */
+
+/* Navbar Items */
+.navbar-items a{
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+.navbar-items a:hover{
+    color: #f39c12;
+    border-bottom: #fff solid 0.2rem;
+}
+/* END OF Navbar Items */
+
+/* Section-1 Home */
+#home{
+    height: 65rem;
+    text-align: center;
+    background: url(../FoodApp/img/section_1_bg.jpg) no-repeat center center/cover;
+    color: #fff;
+}
+
+#home h1{
+    font-size: 5rem;
+    padding-top: 24rem;
+    padding-bottom: 2rem;
+}
+
+#home p{
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.button{
+    margin-top: 2rem;
+    height: 5rem;
+    width: 16rem;
+    color: #fff;
+    font: 2em Aclonica;
+    background-color: transparent;
+    border: #fff 0.2rem solid;
+    border-radius: 9px;
+}
+
+.button:hover{
+    background-color: rgb(187, 60, 60);
+}
+/* END OF Section-1 Home */
+
+/* Section-2 Services */
+#services{
+    height: 55rem;
+}
+
+#services h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    height: auto;
+    width: 50rem;
+    text-align: center;
+    border: brown 0.2rem solid;
+    padding: 4rem;
+    border-radius: 25px;
+    background-color: #efefef;
+}
+
+.card img{
+    height: 16rem;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+.card h3{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+}
+
+.card:hover{
+    background-color: gray;
+}
+/* END OF Section-2 Services */
+
+/* Section-3 */
+#clients{
+    margin-top: 90px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+
+#clients h1{
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 10rem;
+    margin: 2rem;
+    color: #fff;
+}
+.container img{
+    height: 18rem;
+    padding: 3rem;
+}
+
+.container{
+    justify-content: center;
+}
+/* END OF Section-3 */
+
+/* Section-4 */
+#contact{
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.1)
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../FoodApp/img/section4_bg.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact h1{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 9px;
+    font-size: 1.5rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 2rem;
+   font-family: 'Aclonica','sans-serif' , cursive;
+   font-weight: bold;
+}
+/* END OF Section-4 */
+
+/* Footer */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* END OF Footer */
+
+/* Media Queries */
+@media(max-width: 1100px){
+    #services{
+        height: auto;
+    }
+
+    #services .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #services .card{
+        width: 70%;
+    }
+
+    #contact-box form{
+        width: 80%;
+    }
+}
+
+@media(max-width: 900px){
+    #clients{
+        height: auto;
+    }
+
+    #clients .container{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container img{
+        display: block;
+        padding: 0 auto;
+        text-align: center;
+    }
+
+    #contact-box form{
+        width: 80%;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15rem;
+    }
+
+    .navbar-items a{
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    
+    .navbar-items a:hover{
+        color: #f39c12;
+        border-bottom: #fff solid 0.2rem;
+    }
+}
+
+@media(max-width: 520px){
+    #home h1{
+        font-size: 3rem;
+    }
+
+    #home p{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:400px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 25rem;
+        padding: auto;
+        position: relative;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .navbar-items{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* END OF Media Queries */
+
+
+
+
+
+
+
