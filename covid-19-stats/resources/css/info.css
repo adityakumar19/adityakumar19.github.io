@@ -1,0 +1,159 @@
+/* ---------------------------------------------- */
+/*                  LOAD FONTS                    */
+/* ---------------------------------------------- */
+@font-face{
+    font-family: 'Gilroy';
+    src: url(./Gilroy-Regular.woff) format(woff);
+}
+/* ---------------------------------------------- */
+/*                    GENERAL                     */
+/* ---------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+/* ---------------------------------------------- */
+/*                    HEADER                      */
+/* ---------------------------------------------- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin: 0 auto;
+    background-color: cadetblue;
+}
+/* -------- LOGO -------- */
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo img{
+    width: 60px;
+}
+.logo p {
+    font-weight: bold;
+    color: #000;
+}
+/* -------- NAV -------- */
+/* nav{
+    
+} */
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li:last-child{
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+nav ul li:hover{
+    border-bottom: black solid 2px;
+}
+/* ---------------------------------------------- */
+/*                  INFO-SECTION                  */
+/* ---------------------------------------------- */
+.info{
+    font-size: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.info p{
+    margin: 15px 10px;
+}
+/* ---------------------------------------------- */
+/*                      FAQ                       */
+/* ---------------------------------------------- */
+.faq-background{
+    background-color: rgb(194, 250, 110);
+}
+.faq{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    color: #000;
+}
+.faq h1{
+    text-align: center;
+    padding: 20px 0;
+    color: #000;
+    font-size: 40px;
+}
+.faq-card{
+    margin: 20px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: #FFF;
+    border-radius: 5%;
+}
+.faq-card h4{
+    font-size: 30px;
+}
+.faq-card p{
+    font-size: 20px;
+}
+.faq .card-1{
+    flex: 1;
+}
+.faq .card-2{
+    flex: 1;
+}
+.faq-card:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+/* ---------------------------------------------- */
+/*                    FOOTER                      */
+/* ---------------------------------------------- */
+footer{
+    height: 60px;
+
+    margin: 0 auto;
+    background-color: #6a149b;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright p{
+    color: #FFF;
+}
+
+/* ---------------------------------------------- */
+/*             SCREEN WIDTH < 1000px              */
+/* ---------------------------------------------- */
+@media(max-width:1000px){
+    .faq .flex{
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
