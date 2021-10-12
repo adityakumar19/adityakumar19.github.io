@@ -108,8 +108,8 @@ function updateStats() {
   const total_cases = cases_list[cases_list.length - 1];
   const new_confirmed_cases = total_cases - cases_list[cases_list.length - 2];
 
-  const total_recovered = recovered_list[recovered_list.length - 100];
-  const new_recovered_cases = total_recovered - recovered_list[recovered_list.length - 101];
+  const total_recovered = recovered_list[recovered_list.length - 150];
+  const new_recovered_cases = total_recovered - recovered_list[recovered_list.length - 151];
 
   const total_deaths = deaths_list[deaths_list.length - 1];
   const new_deaths_cases = total_deaths - deaths_list[deaths_list.length - 2];
