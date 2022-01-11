@@ -1,8 +1,5 @@
-# LGMVIP-Web-Development-Task-1
+#ZIPPY
 
-# Task-1
-
-## About The Task
-Creating a web page using HTML, CSS, JavaScript.
+A static web page using HTML, CSS, JavaScript.
 
 Visit Website:https://adityatask-1lgmvip.netlify.app/
