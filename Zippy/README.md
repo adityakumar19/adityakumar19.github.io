@@ -1,4 +1,4 @@
-#ZIPPY
+# ZIPPY
 
 A static web page using HTML, CSS, JavaScript.
 
